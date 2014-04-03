@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>EF85B8E4-EB38-411B-81DD-7E93FE7EDB23</string>
+	<key>IDESourceControlProjectName</key>
+	<string>linker</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>CE632934-F91E-4E7E-8051-C7BFFAA062F0</key>
+		<string>https://github.com/yangchao-YC/LinkEr-IOS.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>linker.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>CE632934-F91E-4E7E-8051-C7BFFAA062F0</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/yangchao-YC/LinkEr-IOS.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>CE632934-F91E-4E7E-8051-C7BFFAA062F0</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>CE632934-F91E-4E7E-8051-C7BFFAA062F0</string>
+			<key>IDESourceControlWCCName</key>
+			<string>LinkEr-IOS</string>
+		</dict>
+	</array>
+</dict>
+</plist>
