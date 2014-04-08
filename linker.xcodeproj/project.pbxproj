@@ -21,6 +21,7 @@
 		710752E818ED0FC2002802AA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 710752CA18ED0FC2002802AA /* UIKit.framework */; };
 		710752F018ED0FC2002802AA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 710752EE18ED0FC2002802AA /* InfoPlist.strings */; };
 		710752F218ED0FC2002802AA /* linkerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 710752F118ED0FC2002802AA /* linkerTests.m */; };
+		710D55DB18F394FA009DD936 /* ViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 710D55DA18F394FA009DD936 /* ViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		710752ED18ED0FC2002802AA /* linkerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "linkerTests-Info.plist"; sourceTree = "<group>"; };
 		710752EF18ED0FC2002802AA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		710752F118ED0FC2002802AA /* linkerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = linkerTests.m; sourceTree = "<group>"; };
+		710D55D918F394FA009DD936 /* ViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewCell.h; sourceTree = "<group>"; };
+		710D55DA18F394FA009DD936 /* ViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +85,7 @@
 		710752BA18ED0FC2002802AA = {
 			isa = PBXGroup;
 			children = (
+				710D55D818F394B1009DD936 /* TableViewCell */,
 				710752CC18ED0FC2002802AA /* linker */,
 				710752EB18ED0FC2002802AA /* linkerTests */,
 				710752C518ED0FC2002802AA /* Frameworks */,
@@ -150,6 +154,15 @@
 				710752EE18ED0FC2002802AA /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		710D55D818F394B1009DD936 /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				710D55D918F394FA009DD936 /* ViewCell.h */,
+				710D55DA18F394FA009DD936 /* ViewCell.m */,
+			);
+			name = TableViewCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -249,6 +262,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				710D55DB18F394FA009DD936 /* ViewCell.m in Sources */,
 				710752DD18ED0FC2002802AA /* ViewController.m in Sources */,
 				710752D718ED0FC2002802AA /* AppDelegate.m in Sources */,
 				710752D318ED0FC2002802AA /* main.m in Sources */,
@@ -456,6 +470,7 @@
 				710752F718ED0FC2002802AA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		710752F818ED0FC2002802AA /* Build configuration list for PBXNativeTarget "linkerTests" */ = {
 			isa = XCConfigurationList;
@@ -464,6 +479,7 @@
 				710752FA18ED0FC2002802AA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-
+#import "ViewCell.h"
 @interface ViewController ()
 
 @end
@@ -24,6 +24,22 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    
+    static NSString *cellID = @"ViewCell";
+    
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellID forIndexPath:indexPath];
+    if (!cell) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellID];
+    }
+    
+    ViewCell *viewCell = (ViewCell *)cell;
+    
+    return cell;
 }
 
 
