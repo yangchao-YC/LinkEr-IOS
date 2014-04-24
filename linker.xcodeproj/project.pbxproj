@@ -21,6 +21,8 @@
 		710752F018ED0FC2002802AA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 710752EE18ED0FC2002802AA /* InfoPlist.strings */; };
 		710752F218ED0FC2002802AA /* linkerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 710752F118ED0FC2002802AA /* linkerTests.m */; };
 		7160D13A18F7A2DD008A8BB9 /* LocationCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7160D13918F7A2DD008A8BB9 /* LocationCell.m */; };
+		7196CE3F1908EC19000F863A /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 7196CE3D1908EC19000F863A /* icon.png */; };
+		7196CE401908EC19000F863A /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7196CE3E1908EC19000F863A /* icon@2x.png */; };
 		7198529418F64CCC0099CE0C /* home_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 7198529218F64CCC0099CE0C /* home_bg.png */; };
 		7198529518F64CCC0099CE0C /* home_bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7198529318F64CCC0099CE0C /* home_bg@2x.png */; };
 		7198529818F68A1D0099CE0C /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7198529718F68A1D0099CE0C /* HomeViewController.m */; };
@@ -57,6 +59,8 @@
 		710752F118ED0FC2002802AA /* linkerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = linkerTests.m; sourceTree = "<group>"; };
 		7160D13818F7A2DD008A8BB9 /* LocationCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationCell.h; sourceTree = "<group>"; };
 		7160D13918F7A2DD008A8BB9 /* LocationCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationCell.m; sourceTree = "<group>"; };
+		7196CE3D1908EC19000F863A /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		7196CE3E1908EC19000F863A /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@2x.png"; sourceTree = "<group>"; };
 		7198529218F64CCC0099CE0C /* home_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home_bg.png; sourceTree = "<group>"; };
 		7198529318F64CCC0099CE0C /* home_bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "home_bg@2x.png"; sourceTree = "<group>"; };
 		7198529618F68A1D0099CE0C /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
@@ -178,6 +182,8 @@
 		7198529118F64CBF0099CE0C /* images */ = {
 			isa = PBXGroup;
 			children = (
+				7196CE3D1908EC19000F863A /* icon.png */,
+				7196CE3E1908EC19000F863A /* icon@2x.png */,
 				7198529218F64CCC0099CE0C /* home_bg.png */,
 				7198529318F64CCC0099CE0C /* home_bg@2x.png */,
 			);
@@ -260,8 +266,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7196CE401908EC19000F863A /* icon@2x.png in Resources */,
 				710752DF18ED0FC2002802AA /* Images.xcassets in Resources */,
 				710752D118ED0FC2002802AA /* InfoPlist.strings in Resources */,
+				7196CE3F1908EC19000F863A /* icon.png in Resources */,
 				710752DA18ED0FC2002802AA /* Main.storyboard in Resources */,
 				7198529518F64CCC0099CE0C /* home_bg@2x.png in Resources */,
 				7198529418F64CCC0099CE0C /* home_bg.png in Resources */,
@@ -369,7 +377,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
@@ -401,7 +409,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -415,6 +423,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "linker/linker-Prefix.pch";
 				INFOPLIST_FILE = "linker/linker-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -428,6 +437,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "linker/linker-Prefix.pch";
 				INFOPLIST_FILE = "linker/linker-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

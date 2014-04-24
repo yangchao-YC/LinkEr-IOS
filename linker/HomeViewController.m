@@ -7,7 +7,7 @@
 //
 
 #import "HomeViewController.h"
-
+#import "HomeTableViewCell.h"
 @interface HomeViewController ()
 
 @end
@@ -32,6 +32,11 @@
     
     [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
     
+    
+    self.edgesForExtendedLayout = UIRectEdgeNone;//取出头部20个空白
+    self.HomeTableView.backgroundColor = [UIColor clearColor];//设置背景色
+    self.HomeTableView.bounces = NO;//超出不能滑动
+    self.HomeTableView.showsVerticalScrollIndicator = NO;//隐藏滚动条
 }
 
 
@@ -43,12 +48,25 @@
     static NSString *cellID_Location = @"LocationCell";
     
     UITableViewCell *cell;
+    
+    
+    
     if (tableView == self.HomeTableView) {
         
          cell = [tableView dequeueReusableCellWithIdentifier:cellID_Home forIndexPath:indexPath];
         if (!cell) {
             cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellID_Home];
         }
+        
+        cell.selectionStyle = UITableViewCellSelectionStyleNone;//去除点击高亮显示
+        
+        HomeTableViewCell *home = (HomeTableViewCell *)cell;
+    
+        int selfRow = indexPath.row;
+        home.titleLabel.text = [NSString stringWithFormat:@"我是第%d行",selfRow];
+        
+        return cell;
+        
     }
     else
     {
@@ -56,16 +74,20 @@
         if (!cell) {
             cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellID_Location];
         }
+        
+        cell.selectionStyle = UITableViewCellSelectionStyleNone;//去除点击高亮显示
+         return cell;
     }
     
-    return cell;
+    
+
 }
 
 
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 8;//设置显示行数
+    return 5;//设置显示行数
 }
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
@@ -75,7 +97,7 @@
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return 76;
+    return 45;
 }//设置模块内cell的高度
 
 
